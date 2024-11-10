@@ -44,6 +44,7 @@ DB_PASSWORD=your_password
 Commands
 
 ```bash
+php artisan migrate
 php artisan import:all
 php artisan characters:import
 php artisan houses:import
