@@ -15,8 +15,8 @@ class TestDBConnection extends Command
         try {
             DB::connection()->getPdo();
             
-        } catch (\Exception $e) {
-            $this->error("✕ Verbindungsfehler: " . $e->getMessage());
+        } catch (\Exception $error) {
+            $this->error("✕ Verbindungsfehler: " . $error->getMessage());
         }
     }
 }
